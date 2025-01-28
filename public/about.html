@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protic</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <style>
+        .clip-path-trapezoid {
+            clip-path: polygon(0 0, 0 100%, 40% 100%, 100% 0);
+            /* background-image: linear-gradient(to right, #275032, #275032, #275032f1, #27503269, transparent, transparent, transparent, transparent); */
+            background-image: linear-gradient(151deg, #275032, #275032, transparent, transparent);
+        }
+
+        .line {
+            width: 3.5rem;
+            height: 1px;
+            /* background-color: #13111e33; */
+            margin-left: 1rem;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- navbar -->
+    <header class="fixed flex justify-between top-0 left-0 h-[70px] bg-c6 items-center text-white z-50 w-full">
+        <div class="flex">
+            <div class="flex items-center bg-c2 w-[300px] h-[70px] justify-around">
+                <div class="py-3 px-5">
+                    <img src="img/Logo.png" alt="Logo Protic" width="60px" height="60px">
+                </div>
+            </div>
+            <div class="w-0 h-0 border-t-[70px] border-r-[70px] border-t-c2 border-r-transparent"></div>
+        </div>
+
+        <nav class="hidden md:flex space-x-16 items-center">
+            <a href="index.html" class="relative no-underline hover:text-c3">Home</a>
+            <a href="about.html" class="relative no-underline hover:text-c3">About Us</a>
+
+            <!-- divisi dropdown -->
+            <div class="relative">
+                <button id="btn-divisi" class="flex items-center gap-1 hover:text-c3">Divisi
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                </button>
+
+                <div id="divisi" class="absolute left-0 mt-2 w-48 bg-white text-black shadow-md rounded hidden group-hover:block">
+                    <a href="div-bph.html" class="block px-4 py-2 hover:text-c3">BPH</a>
+                    <a href="div-teknikal.html" class="block px-4 py-2 hover:text-c3">Techical</a>
+                    <a href="div-nontek.html" class="block px-4 py-2 hover:text-c3">Non-Technical</a>
+                </div>
+            </div>
+
+            <a href="prestasi.html" class="relative no-underline hover:text-c3">Prestasi</a>
+            <a href="program.html" class="relative no-underline hover:text-c3">Program</a>
+            <a href="contact.html" class="relative no-underline hover:text-c3">Contact Us</a>
+        </nav>
+        <div class="flex items-center border border-c3 rounded px-4 mr-28 w-[232px] h-[30px]">
+            <button class="text-white hover:text-c3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.9 14.32a8 8 0 111.42-1.42l4.9 4.9a1 1 0 01-1.42 1.42l-4.9-4.9zM8 14a6 6 0 100-12 6 6 0 000 12z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <input 
+              type="text" 
+              placeholder="cari" 
+              class="bg-transparent text-white placeholder-gray-300 focus:outline-none ml-6"
+            />
+        </div>
+    </header>
+
+    <section class="h-44" id="hero">
+        <div class="relative h-full bg-cover bg-center" style="background-image: url(img/foto1.jpg);">
+            <!-- overlay hijau screen -->
+            <div class="absolute inset-0 bg-c6 bg-opacity-70"></div>
+
+            <!-- overlay hijau kotak -->
+             <div class="absolute w-64 h-full bg-c6 blur-md"></div>
+
+            <!-- overlay hijau trapesium -->
+            <div class="relative w-2/3 h-full clip-path-trapezoid blur-md"></div>
+
+        </div>
+    </section>
+
+    <section class="px-40" id="">
+        <div class="flex items-center mt-20 justify-center">
+            <div class="mr-32 w-[500px]">
+                <h3 class="flex items-center font-monserrat font-semibold text-c5 text-lg">Who We Are & What We Do
+                    <span class="line bg-[#00000033]"></span>
+                </h3>
+                <h1 class="font-playfair font-bold text-[40px] leading-[50px] text-c4 mt-6">Protic</h1>
+                <p class="font-monserrat font-normal text-base text-c4 text-justify mt-6">Organisasi ini bernama Unit Kegiatan Mahasiswa PROGRAMMING TECHNOLOGY INFORMATICS CLUB yang disingkat menjadi UKM PROTIC yang didirikan pada 10 Oktober 2018 dengan nama UKM Pemrograman, lalu berganti nama menjadi UKM PROTIC pada Juli 2021. Sebagai organisasi di bawah naungan BEM Politeknik Negeri Cilacap, UKM PROTIC bertanggung jawab atas kegiatan, kepengurusan, dan anggota serta berfokus pada pengembangan minat dan bakat mahasiswa di bidang teknologi informasi.</p>
+            </div>
+
+            <div class="relative rounded-xl w-[550px] h-[440px] px-5 py-4 bg-[#13111E33]">
+                <img src="img/foto1.jpg" alt="Foto Anggota" class="rounded-lg w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section class="h-screen px-40" id="">
+        <div class="h-full flex flex-col items-center justify-center">
+            <!-- <div class="mx-auto"> -->
+                <h1 class="">Visi & Misi</h1>
+                <div class="flex justify-center">
+                    <div class="bg-white shadow-lg mr-10 px-10 py-6 w-[620px]">
+                        <h2 class="">Visi</h2>
+                        <p class="">Unit Kegiatan Mahasiswa Programming Technology Informatics Club Politeknik Negeri Cilacap memiliki tujuan, yaitu :</p>
+                        <ol class="list-decimal list-outside pl-4">
+                            <li>Menjadikan Unit Kegiatan Mahasiswa yang dapat menampung, menjadi wadah, serta memfasilitasi minat dan bakat mahasiswa dalam pengembangan diri mahasiswa Politeknik Negeri Cilacap.</li>
+                            <li>Menyalurkan minat dan bakat mahasiswa di bidang pemrograman komputer menjadi sebuah prestasi baik di tingkat perguruan tinggi, regional, nasional, maupun internasional sehingga memberikan nama baik bagi Politeknik Negeri Cilacap.</li>
+                            <li>Meningkatkan hard skill dan soft skill dalam diri serta mampu berkolaborasi kemampuan bidang pemrograman antar mahasiswa Politeknik Negeri Cilacap.</li>
+                        </ol>
+                    </div>
+
+                    <div class="">
+                        <h2 class="">Misi</h2>
+                        <p class="">Untuk mencapai tujuan tersebut UKM PROTIC mengimplementasikannya :</p>
+                        <ul class="list-decimal">
+                            <li>Dengan berorientasi pada bidang pemrograman melalui subdivisi yang meliputi Web, Mobile, UI/UX, DevOps dan Data.</li>
+                            <li>UKM PROTIC akan mengadakan kegiatan rutin seperti pertemuan anggota, diskusi dan sharing session untuk memperkaya pengetahuan dan pengalaman di bidang pemograman.</li>
+                            <li>UKM PROTIC akan menjalinkan kerja sama dengan pihak lain baik internal maupun eksternal kampus untuk mengoptiomalkan pengembangan potensi anggotanya.</li>
+                            <li>UKM PROTIC berusaha untuk berpatisipasi dalam kompetisi, pelatihan atau acara lainnya yang berkaitan dengan pemrograman guna untuk meningkatkan kemampuan dan memperluas jaringan anggotanya.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <footer class="bg-c4 text-white h-14 flex justify-center items-center">
+        <h3 class="text-center font-monserrat font-normal text-lg">Hak Cipta &copy; 2024. Protic. Semua hak dilindungi undang-undang.</h3>
+    </footer> -->
+</body>
+</html>
