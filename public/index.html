@@ -6,6 +6,7 @@
     <title>Protic</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/main.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,16 +37,16 @@
         </div>
 
         <!-- Btn Hamburger -->
-        <button id="hamburger" class="md:hidden flex items-center px-4 focus:outline-none">
+        <!-- <button id="hamburger" class="md:hidden flex items-center px-4 focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
-        </button>
+        </button> -->
 
         <!-- navbar -->
         <nav id="navbar" class="hidden md:flex md:space-x-16 items-center md:static absolute top-[70px] left-0 w-full bg-c6 md:bg-transparent flex-col md:flex-row md:w-auto z-40">
             <a href="index.html" class="relative no-underline text-c3">Home</a>
-            <a href="#" class="relative no-underline hover:text-c3">About Us</a>
+            <a href="about.html" class="relative no-underline hover:text-c3">About Us</a>
 
             <!-- divisi dropdown -->
             <div class="relative group">
@@ -55,8 +56,8 @@
                       </svg>
                 </button>
 
-                <div id="divisi" class="absolute left-0 mt-2 w-48 bg-white text-black shadow-md rounded hidden block">
-                    <a href="div-bph.html" class="block px-4 py-2 hover:text-c3">BPH</a>
+                <div id="divisi" class="absolute left-0 mt-2 w-48 bg-white text-black shadow-md rounded hidden">
+                    <a href="bph.html" class="block px-4 py-2 hover:text-c3">BPH</a>
                     <a href="div-teknikal.html" class="block px-4 py-2 hover:text-c3">Techical</a>
                     <a href="div-nontek.html" class="block px-4 py-2 hover:text-c3">Non-Technical</a>
                 </div>
@@ -80,7 +81,7 @@
         </div>
     </header>
 
-    <section class="h-screen" id="home">
+    <section class="h-screen" id="hero">
         <!-- <div class="relative bg-c6 h-screen bg-opacity-50"></div> -->
         <!-- <img src="img/bg.jpg" alt="" class="object-cover h-full w-full object-bottom"> -->
 
@@ -100,9 +101,20 @@
 
     </section>
 
-    <section class="h-screen" id="about">
+    <section class="h-screen overflow-hidden" id="about">
+      <div class="relative -top-5 -right-20">
+        <svg width="345" height="345" viewBox="0 0 345 345" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute">
+          <path d="M344.609 171.968C344.609 278.057 278.514 344.782 172.967 344.782C67.4208 344.782 0.498535 278.057 0.498535 171.968C0.498535 65.8798 67.4208 0 172.967 0C278.514 0 344.609 65.8798 344.609 171.968ZM0.498535 171.968C0.498535 300.142 86.7685 344.782 172.967 344.782C259.166 344.782 344.609 296.591 344.609 171.968C344.609 47.3463 259.166 0 172.967 0C53.5009 0 0.498535 85.3269 0.498535 171.968Z" fill="#C8C6C7"/>
+        </svg>
+
+        <svg width="345" height="345" viewBox="0 0 345 345" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-3 left-3">
+          <path d="M344.609 171.968C344.609 278.057 278.514 344.782 172.967 344.782C67.4208 344.782 0.498535 278.057 0.498535 171.968C0.498535 65.8798 67.4208 0 172.967 0C278.514 0 344.609 65.8798 344.609 171.968ZM0.498535 171.968C0.498535 300.142 86.7685 344.782 172.967 344.782C259.166 344.782 344.609 296.591 344.609 171.968C344.609 47.3463 259.166 0 172.967 0C53.5009 0 0.498535 85.3269 0.498535 171.968Z" fill="#E99C16"/>
+        </svg>
+      </div>
+
       <div class="bg-white h-full flex items-center justify-center">
 
+            
         <div class="relative rounded-xl w-[550px] h-[440px] px-5 py-4 bg-[#13111E33]">
           <img src="img/foto1.jpg" alt="Foto Anggota" class="rounded-lg w-full h-full object-cover">
         </div>
@@ -188,7 +200,7 @@
           <p class="font-monserrat font-semibold text-xl text-c5 mt-3">Why choose us?</p>
           
           <div class="flex space-x-3 mt-10">
-            <div class="w-[450px] flex-col justify-center items-center border-4 px-10 py-8 rounded-xl hover:bg-c6 group">   <!-- Remove border change to shadow -->
+            <div class="w-[450px] flex-col justify-center items-center shadow-[0px_0px_5px_rgba(0,0,0,0.25)] px-10 py-8 rounded-xl hover:bg-c6 group">   <!-- Remove border change to shadow -->
               <div class="flex justify-center">
                 <svg class="fill-current text-black group-hover:text-white" width="70" height="70" viewBox="0 0 101 96" xmlns="http://www.w3.org/2000/svg">
                   <path d="M71.4999 48.129C84.6099 48.129 95.25 37.489 95.25 24.379C95.25 11.269 84.6099 0.629028 71.4999 0.629028C58.3899 0.629028 47.75 11.269 47.75 24.379C47.75 37.489 58.3899 48.129 71.4999 48.129ZM97.3875 74.729C95.535 72.829 93.2075 71.879 90.5 71.879H57.25L47.3699 68.4115L48.9375 63.9465L57.25 67.129H70.5499C72.2124 67.129 73.5424 66.464 74.6349 65.3715C75.7274 64.279 76.25 62.949 76.25 61.4765C76.25 58.9115 75.0149 57.154 72.5449 56.1565L38.0124 43.379H28.7499V86.129L62 95.629L100.142 81.379C100.19 78.8615 99.24 76.629 97.3875 74.729ZM19.2499 43.379H0.17395V95.629H19.2499V43.379Z"/>
@@ -198,7 +210,7 @@
               <p class="font-monserrat font-normal text-base leading-5 mt-2 text-c4 group-hover:text-white">Protic dapat menampung, menjadi wadah, serta memfasilitasi minat dan bakat mahasiswa dalam pengembangan diri dengan pertemuan dan kegiatan rutin.</p>
             </div>
 
-            <div class="w-[450px] flex-col justify-center items-center border-4 px-10 py-8 rounded-xl hover:bg-c6 group">   <!-- Remove border change to shadow -->
+            <div class="w-[450px] flex-col justify-center items-center shadow-[0px_0px_5px_rgba(0,0,0,0.25)] px-10 py-8 rounded-xl hover:bg-c6 group">   <!-- Remove border change to shadow -->
               <div class="flex justify-center">
                 <svg class="fill-current text-black group-hover:text-white" width="70" height="70" viewBox="0 0 63 103" xmlns="http://www.w3.org/2000/svg">
                   <path d="M42.6273 61.1656L47.6825 61.6962V102.844L33.7192 87.9336V64.2127L37.7747 66.1932L42.6273 61.1656ZM20.3728 61.1656L15.3149 61.6962V102.844L29.2779 87.9336V64.2127L25.2227 66.1932L20.3728 61.1656ZM58.6652 35.3865L60.3011 41.0807L55.3904 44.3916L54.9791 50.3078L49.2324 51.7383L46.827 57.152L40.9355 56.5297L36.822 60.7795L31.5 58.1796L26.1781 60.7795L22.0645 56.5157L16.173 57.138L13.7677 51.7245L8.02092 50.3078L7.60967 44.3998L2.68496 41.0778L4.32104 35.3838L0.848938 30.5869L4.33217 25.7953L2.68496 20.1125L7.59854 16.8016L8.00979 10.8934L13.7677 9.47686L16.173 4.06342L22.0645 4.68552L26.1781 0.421875L31.5 3.02183L36.822 0.421875L40.9355 4.68552L46.827 4.06342L49.2324 9.47686L54.9791 10.9074L55.3904 16.8154L60.3011 20.1263L58.6652 25.8205L62.1511 30.5869L58.6652 35.3865ZM47.7074 30.5869C47.7074 27.4056 46.764 24.2957 44.9966 21.6505C43.2291 19.0053 40.7169 16.9436 37.7778 15.7262C34.8386 14.5087 31.6044 14.1902 28.4842 14.8108C25.364 15.4315 22.4979 16.9634 20.2484 19.213C17.9988 21.4625 16.4668 24.3286 15.8462 27.4488C15.2255 30.5691 15.5441 33.8032 16.7615 36.7424C17.979 39.6816 20.0407 42.1937 22.6858 43.9612C25.331 45.7287 28.4409 46.672 31.6223 46.672C35.8863 46.6654 39.9737 44.9686 42.9888 41.9535C46.0039 38.9384 47.7007 34.8509 47.7074 30.5869ZM31.6223 18.9458C29.3199 18.9458 27.0693 19.6285 25.1549 20.9076C23.2406 22.1867 21.7486 24.0048 20.8675 26.1318C19.9864 28.2589 19.7559 30.5995 20.205 32.8576C20.6542 35.1157 21.7628 37.1899 23.3908 38.818C25.0188 40.446 27.093 41.5547 29.3511 42.0039C31.6092 42.4531 33.9498 42.2226 36.0769 41.3415C38.204 40.4605 40.0221 38.9685 41.3012 37.0542C42.5804 35.1399 43.2631 32.8892 43.2632 30.5869C43.2544 27.503 42.0248 24.5481 39.8434 22.3682C37.662 20.1883 34.7062 18.9609 31.6223 18.9542V18.9458Z"/>
@@ -209,7 +221,7 @@
               <p class="font-monserrat font-normal text-base leading-5 mt-2 text-c4 group-hover:text-white">Minat dan bakat mahasiswa disalurkan menjadi sebuah prestasi sehingga memberikan nama baik bagi Politeknik Negeri Cilacap melalui Kerjasama dengan pihak internal maupun eksternal.</p>
             </div>
 
-            <div class="w-[450px] flex-col justify-center items-center border-4 px-10 py-8 rounded-xl hover:bg-c6 group">   <!-- Remove border change to shadow -->
+            <div class="w-[450px] flex-col justify-center items-center shadow-[0px_0px_5px_rgba(0,0,0,0.25)] px-10 py-8 rounded-xl hover:bg-c6 group">   <!-- Remove border change to shadow -->
               <div class="flex justify-center">
                 <svg class="fill-current text-black group-hover:text-white" width="70" height="70" viewBox="0 0 101 94" xmlns="http://www.w3.org/2000/svg">
                   <path d="M50.5 29.1875C54.2793 29.1875 57.9039 27.6862 60.5763 25.0138C63.2487 22.3414 64.75 18.7168 64.75 14.9375C64.75 11.1582 63.2487 7.53362 60.5763 4.86123C57.9039 2.18883 54.2793 0.6875 50.5 0.6875C46.7207 0.6875 43.0961 2.18883 40.4237 4.86123C37.7513 7.53362 36.25 11.1582 36.25 14.9375C36.25 18.7168 37.7513 22.3414 40.4237 25.0138C43.0961 27.6862 46.7207 29.1875 50.5 29.1875ZM29.125 16.7188C29.125 18.3562 28.8025 19.9776 28.1759 21.4903C27.5493 23.0031 26.6308 24.3777 25.473 25.5355C24.3152 26.6933 22.9406 27.6118 21.4278 28.2384C19.9151 28.865 18.2937 29.1875 16.6562 29.1875C15.0188 29.1875 13.3974 28.865 11.8847 28.2384C10.3719 27.6118 8.99734 26.6933 7.83951 25.5355C6.68168 24.3777 5.76324 23.0031 5.13663 21.4903C4.51001 19.9776 4.1875 18.3562 4.1875 16.7188C4.1875 13.4118 5.50117 10.2404 7.83951 7.90201C10.1779 5.56367 13.3493 4.25 16.6562 4.25C19.9632 4.25 23.1346 5.56367 25.473 7.90201C27.8113 10.2404 29.125 13.4118 29.125 16.7188ZM96.8125 16.7188C96.8125 18.3562 96.49 19.9776 95.8634 21.4903C95.2368 23.0031 94.3183 24.3777 93.1605 25.5355C92.0027 26.6933 90.6281 27.6118 89.1153 28.2384C87.6026 28.865 85.9812 29.1875 84.3438 29.1875C82.7063 29.1875 81.0849 28.865 79.5722 28.2384C78.0594 27.6118 76.6848 26.6933 75.527 25.5355C74.3692 24.3777 73.4507 23.0031 72.8241 21.4903C72.1975 19.9776 71.875 18.3562 71.875 16.7188C71.875 13.4118 73.1887 10.2404 75.527 7.90201C77.8654 5.56367 81.0368 4.25 84.3438 4.25C87.6507 4.25 90.8221 5.56367 93.1605 7.90201C95.4988 10.2404 96.8125 13.4118 96.8125 16.7188ZM26.9056 36.3125C24.8776 38.8373 23.775 41.9803 23.7812 45.2188V71.9375C23.7812 76.3372 24.8429 80.4875 26.7274 84.1462C24.0123 85.5738 20.9746 86.2761 17.9084 86.185C14.8422 86.0938 11.8515 85.2124 9.22596 83.6261C6.60044 82.0397 4.42909 79.8022 2.92223 77.1303C1.41538 74.4584 0.624082 71.4426 0.625001 68.375V45.2188C0.625001 42.8567 1.56334 40.5913 3.23358 38.9211C4.90383 37.2508 7.16917 36.3125 9.53125 36.3125H26.9056ZM74.2726 84.1462C76.2107 80.3685 77.2207 76.1833 77.2188 71.9375V45.2188C77.2188 41.8486 76.0502 38.7528 74.0944 36.3125H91.4688C93.8308 36.3125 96.0962 37.2508 97.7664 38.9211C99.4367 40.5913 100.375 42.8567 100.375 45.2188V68.375C100.376 71.4426 99.5846 74.4584 98.0778 77.1303C96.5709 79.8022 94.3996 82.0397 91.774 83.6261C89.1485 85.2124 86.1578 86.0938 83.0916 86.185C80.0254 86.2761 76.9877 85.5738 74.2726 84.1462ZM38.0312 36.3125C35.6692 36.3125 33.4038 37.2508 31.7336 38.9211C30.0633 40.5913 29.125 42.8567 29.125 45.2188V71.9375C29.125 77.6065 31.377 83.0433 35.3856 87.0519C39.3942 91.0605 44.831 93.3125 50.5 93.3125C56.169 93.3125 61.6058 91.0605 65.6144 87.0519C69.623 83.0433 71.875 77.6065 71.875 71.9375V45.2188C71.875 42.8567 70.9367 40.5913 69.2664 38.9211C67.5962 37.2508 65.3308 36.3125 62.9688 36.3125H38.0312Z"/>
@@ -283,7 +295,7 @@
 
         <div class="grid grid-cols-3 gap-5">
           <!-- card sj web basic -->
-          <div class="bg-white rounded-xl shadow-md border-2 overflow-hidden flex flex-col">
+          <div class="bg-white rounded-tr-xl rounded-bl-xl rounded-br-xl shadow-md border-2 overflow-hidden flex flex-col">
             <div class="relative">
               <img src="img/sj-web-basic.jpg" alt="Study Jam Web Programming (Basic)" class="w-full h-[270px] rounded-b-xl object-cover">
               <div class="absolute w-24 top-0 left-0 bg-c2 text-[#444444] font-playfair font-semibold text-xl text-center px-3 py-1">Oct - Feb</div>
@@ -297,7 +309,7 @@
           </div>
 
           <!-- card sj web adv -->
-          <div class="bg-white rounded-xl shadow-md border-2 overflow-hidden flex flex-col">
+          <div class="bg-white rounded-tr-xl rounded-bl-xl rounded-br-xl shadow-md border-2 overflow-hidden flex flex-col">
             <div class="relative">
               <img src="img/sj-web-adv.jpg" alt="Study Jam Web Programming (Advance)" class="w-full h-[270px] rounded-b-xl object-cover">
               <div class="absolute w-24 top-0 left-0 bg-c2 text-[#444444] font-playfair font-semibold text-xl text-center px-3 py-1">Oct - Feb</div>
@@ -311,7 +323,7 @@
           </div>
 
           <!-- card sj mobile -->
-          <div class="bg-white rounded-xl shadow-md border-2 overflow-hidden flex flex-col">
+          <div class="bg-white rounded-tr-xl rounded-bl-xl rounded-br-xl shadow-md border-2 overflow-hidden flex flex-col">
             <div class="relative">
               <img src="img/sj-mobile.jpg" alt="Study Jam Mobile Programming" class="w-full h-[270px] rounded-b-xl object-cover">
               <div class="absolute w-24 top-0 left-0 bg-c2 text-[#444444] font-playfair font-semibold text-xl text-center px-3 py-1">Oct - Feb</div>
@@ -325,7 +337,7 @@
           </div>
 
           <!-- card sj Ui/Ux -->
-          <div class="bg-white rounded-xl shadow-md border-2 overflow-hidden flex flex-col">
+          <div class="bg-white rounded-tr-xl rounded-bl-xl rounded-br-xl shadow-md border-2 overflow-hidden flex flex-col">
             <div class="relative">
               <img src="img/sj-uiux.jpg" alt="Study Jam UI/UX" class="w-full h-[270px] rounded-b-xl object-cover">
               <div class="absolute w-24 top-0 left-0 bg-c2 text-[#444444] font-playfair font-semibold text-xl text-center px-3 py-1">Oct - Feb</div>
@@ -339,7 +351,7 @@
           </div>
 
           <!-- card JKB talk -->
-          <div class="bg-white rounded-xl shadow-md border-2 overflow-hidden flex flex-col">
+          <div class="bg-white rounded-tr-xl rounded-bl-xl rounded-br-xl shadow-md border-2 overflow-hidden flex flex-col">
             <div class="relative">
               <img src="img/jkb-talk.jpg" alt="JKB Learning Center - Tech Talk" class="w-full h-[270px] rounded-b-xl object-cover">
               <div class="absolute w-24 top-0 left-0 bg-c2 text-[#444444] font-playfair font-semibold text-xl text-center px-3 py-1">Mar - Jun</div>
@@ -353,7 +365,7 @@
           </div>
 
           <!-- card JKB PBL -->
-          <div class="bg-white rounded-xl shadow-md border-2 overflow-hidden flex flex-col">
+          <div class="bg-white rounded-tr-xl rounded-bl-xl rounded-br-xl shadow-md border-2 overflow-hidden flex flex-col">
             <div class="relative">
               <img src="img/jkb-pbl.jpg" alt="JKB Learning Center - Project Based Learning" class="w-full h-[270px] rounded-b-xl object-cover">
               <div class="absolute w-24 top-0 left-0 bg-c2 text-[#444444] font-playfair font-semibold text-xl text-center px-3 py-1">Mar - Jun</div>
@@ -367,7 +379,7 @@
           </div>
 
           <!-- card JKB sharing -->
-          <div class="bg-white rounded-xl shadow-md border-2 overflow-hidden flex flex-col">
+          <div class="bg-white rounded-tr-xl rounded-bl-xl rounded-br-xl shadow-md border-2 overflow-hidden flex flex-col">
             <div class="relative">
               <img src="img/jkb-sharing.jpg" alt="JKB Learning Center - Sharing Session" class="w-full h-[270px] rounded-b-xl object-cover">
               <div class="absolute w-24 top-0 left-0 bg-c2 text-[#444444] font-playfair font-semibold text-xl text-center px-3 py-1">Mar - Jun</div>
@@ -448,22 +460,5 @@
     </footer>
 
 
-    <script>
-        // ambil elemen tombol dan dropdown menu
-        const dropdownBtn = document.getElementById('btn-divisi');
-        const dropdownMenu = document.getElementByd('divisi');
-    
-        // tambahkan event listener untuk klik tombol
-        dropdownBtn.addEventListener('click', () => {
-          dropdownMenu.classList.toggle('show'); // Tampilkan atau sembunyikan menu
-        });
-    
-        // tutup dropdown jika klik di luar menu
-        document.addEventListener('click', (e) => {
-          if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
-            dropdownMenu.classList.add('hidden');
-          }
-        });
-    </script>
 </body>
 </html>

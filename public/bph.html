@@ -5,43 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Protic</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new-style.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/main.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
-    <style>
-        .clip-path-trapezoid {
-            clip-path: polygon(0 0, 0 100%, 40% 100%, 100% 0);
-            /* background-image: linear-gradient(to right, #275032, #275032, #275032f1, #27503269, transparent, transparent, transparent, transparent); */
-            background-image: linear-gradient(151deg, #275032, #275032, transparent, transparent);
-        }
-
-        .line {
-            width: 3.5rem;
-            height: 1px;
-            /* background-color: #13111e33; */
-            margin-left: 1rem;
-        }
-
-        .breadcrumb {
-            display: flex;
-            align-items: center;
-            gap: 10px; /* Spasi antar elemen breadcrumb */
-        }
-
-        .breadcrumb a {
-            text-decoration: none;
-            color: #ffffff;
-        }
-
-        .breadcrumb li:last-child {
-            color: #f9a825; /* Warna kuning untuk elemen terakhir */
-        }
-
-    </style>
-
+    
 </head>
 <body>
     <!-- navbar -->
@@ -68,7 +40,7 @@
                 </button>
 
                 <div id="divisi" class="absolute left-0 mt-2 w-48 bg-white text-black shadow-md rounded hidden group-hover:block">
-                    <a href="div-bph.html" class="block px-4 py-2 hover:text-c3">BPH</a>
+                    <a href="bph.html" class="block px-4 py-2 hover:text-c3">BPH</a>
                     <a href="div-teknikal.html" class="block px-4 py-2 hover:text-c3">Techical</a>
                     <a href="div-nontek.html" class="block px-4 py-2 hover:text-c3">Non-Technical</a>
                 </div>
@@ -106,9 +78,9 @@
             <div class="absolute flex items-center w-2/3 h-24 bottom-0 z-20 pl-24">  <!-- pl untuk setting jarak text -->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb flex space-x-2 text-white">
-                        <li><a href="index.html" class="hover:underline">Home</a></li>
+                        <li><a href="index.html" class="">Home</a></li>
                         <li>></li>
-                        <li class="text-yellow-400">Divisi</li>
+                        <li class="text-c3">Divisi</li>
                     </ol>
                 </nav>
             </div>
@@ -116,7 +88,7 @@
         </div>
     </section>
 
-    <section class="h-auto py-28" id="about">
+    <section class="h-auto py-28" id="">
         <div class="bg-white h-full flex items-center justify-center">
   
           <div class="relative rounded-xl w-[550px] h-[440px] px-5 py-4 bg-[#13111E33]">
@@ -144,7 +116,7 @@
             
           </div>
         </div>
-      </section>
+    </section>
 
 
 
@@ -207,5 +179,6 @@
     <footer class="bg-c4 text-white h-14 flex justify-center items-center">
         <h3 class="text-center font-monserrat font-normal text-lg">Hak Cipta &copy; 2025. Protic. Semua hak dilindungi undang-undang.</h3>
     </footer>
+
 </body>
 </html>
