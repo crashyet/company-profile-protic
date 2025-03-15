@@ -26,6 +26,27 @@
 }
 
 
+.rotate-arrow {
+    transform: rotate(180deg);
+}
+
+#overlay {
+    position: fixed;
+    top: 80px; /* Start below the navbar */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 5; /* Below the menu but above content */
+    display: none; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+nav ul li:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
 
 
 
